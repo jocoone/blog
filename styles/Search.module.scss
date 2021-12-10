@@ -1,0 +1,39 @@
+.search {
+  padding: 2rem 0;
+
+  .post {
+    padding: 15px 10px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    h3 {
+      margin: 0;
+
+      a {
+        color: var(--text);
+        transition: color 0.5s ease;
+
+        &:hover {
+          color: var(--link);
+        }
+      }
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+
+      .author__picture {
+        margin-right: 5px;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .post + .post {
+    margin-top: 5px;
+  }
+}

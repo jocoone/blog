@@ -1,0 +1,12 @@
+.tag {
+  background-color: var(--secondary);
+  border-radius: 5px;
+  padding: 0 10px;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: bold;
+
+  a {
+    color: var(--white);
+  }
+}

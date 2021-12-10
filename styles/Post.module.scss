@@ -1,0 +1,50 @@
+.article {
+  max-width: 750px;
+
+  h1 {
+    font-size: 3.5em;
+    line-height: 1.2em;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .author__date {
+      display: flex;
+      align-items: center;
+
+      .profile__picture {
+        margin-right: 5px;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+
+      .author {
+        color: var(--primary);
+        letter-spacing: 2px;
+        margin-right: 5px;
+      }
+    }
+
+    .twitter {
+      color: var(--twitter);
+
+      a {
+        color: var(--twitter);
+      }
+
+      .twitter__icon {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .tags {
+    display: flex;
+    gap: 5px;
+  }
+}
