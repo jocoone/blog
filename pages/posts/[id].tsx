@@ -11,6 +11,8 @@ import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "../../src/components/Head";
 import Layout from "../../src/components/Layout";
 import Date from "../../src/components/Date";
+import MyLink from "../../src/components/Link";
+import MyImage from "../../src/components/Image";
 import { Post } from "../../src/domain/Post";
 
 import articleStyles from "../../styles/Post.module.scss";
@@ -24,7 +26,13 @@ const processor = unified()
   .use(remarkGithub, { repository: "rehypejs/rehype-react" })
   .use(remarkRehype)
   .use(rehypeHighlight)
-  .use(rehypeReact, { createElement: React.createElement });
+  .use(rehypeReact, {
+    createElement: React.createElement,
+    components: {
+      a: MyLink,
+      img: MyImage
+    }
+  });
 
 interface Props {
   post: Post;

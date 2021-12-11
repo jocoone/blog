@@ -47,4 +47,11 @@
     display: flex;
     gap: 5px;
   }
+
+  .content {
+    h1 {
+      display: flex;
+      align-items: center;
+    }
+  }
 }

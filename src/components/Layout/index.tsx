@@ -14,7 +14,6 @@ const Layout: React.FunctionComponent<Props> = ({ className, children }) => {
             <div className="header__logo__image">
               <Image src="/images/logo.svg" width={70} height={70} alt="logo" />
             </div>
-            Open source blog
           </div>
         </Link>
         <nav>

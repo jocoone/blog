@@ -31,8 +31,18 @@ h5 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.post-image.inline {
+  width: 100px;
+}
+
 img {
-  width: 100%;
+  &:not(.inline) {
+    width: 100%;
+  }
+
+  &.inline {
+    display: inline-block;
+  }
 }
 
 .blog-layout {
